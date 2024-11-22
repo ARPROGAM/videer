@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Video Player</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script> <!-- For M3U8 -->
+</head>
+<body>
+  <div class="video-player-container">
+    <video id="video-player" controls autoplay></video>
+    <div class="controls">
+      <button id="play-pause">Play</button>
+      <span>Source:</span>
+      <select id="video-source">
+        <option value="blob">Blob URL</option>
+        <option value="m3u8">M3U8 URL</option>
+      </select>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
